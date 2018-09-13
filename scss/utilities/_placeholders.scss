@@ -1,0 +1,22 @@
+// Links, Images, Headlines, Nav Items
+
+%nav__item {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+
+  > * { // Targets ony direct children
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &:hover {
+    background-color: $primary-color;
+    color: $white;
+  }
+}
+
+%link {
+  text-decoration: none;
+  color: $secondary-color;
+}

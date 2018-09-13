@@ -1,7 +1,7 @@
 // Imports for utilites sub directory
 
-@import 'extends',
+@import 'variables',
+        'extends',
         'functions',
         'mixins',
-        'placeholders',
-        'variables'
+        'placeholders';

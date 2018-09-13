@@ -1,3 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i|Open+Sans:300,300i");
+ul .nav__item {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+}
+ul .nav__item > * {
+  text-decoration: none;
+  color: inherit;
+}
+ul .nav__item:hover {
+  background-color: #4ACBB4;
+  color: #FFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85em;
+}
+
+.grid__col--3 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 100px;
+  padding: 0;
+}
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
