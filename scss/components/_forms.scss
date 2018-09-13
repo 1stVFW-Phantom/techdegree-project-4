@@ -1,0 +1,18 @@
+.form {
+  @include flexy($dir: column);
+
+  .img--avatar {
+    margin: 15px auto;
+  }
+
+  .form__label--hidden {
+    display: none;
+  }
+
+  .form__input {
+    margin: 15px 0;
+    padding: 10px;
+    border: none; // To remove the default border
+    border-bottom: 5px solid $primary-color;
+  }
+}

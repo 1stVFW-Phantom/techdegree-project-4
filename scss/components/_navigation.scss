@@ -1,0 +1,11 @@
+// Styling for Header and Navigation section
+
+ul {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 100px; // Pushes content directly below down
+  padding: 0;
+  .nav__item {
+    @extend %nav__item;
+  }
+}

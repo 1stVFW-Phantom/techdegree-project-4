@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i|Open+Sans:300,300i");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600|Open+Sans:300,300i");
 ul .nav__item {
   width: 100%;
   padding: 15px;
@@ -13,6 +13,24 @@ ul .nav__item:hover {
   color: #FFF;
 }
 
+.link {
+  text-decoration: none;
+  color: #42B5FF;
+}
+
+.headline--secondary {
+  color: gray;
+  font-weight: 300;
+}
+
+.headline--primary {
+  color: #4ACBB4;
+  padding-left: 25px;
+  font-weight: 600;
+  width: 75%;
+  line-height: normal;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -22,6 +40,7 @@ ul .nav__item:hover {
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   font-size: 0.85em;
+  line-height: 1.5;
 }
 
 .grid__col--3 {
@@ -29,12 +48,6 @@ ul .nav__item:hover {
   margin: 30px 0;
 }
 
-ul {
-  list-style: none;
-  text-align: center;
-  margin-bottom: 100px;
-  padding: 0;
-}
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -365,6 +378,42 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form .img--avatar {
+  margin: 15px auto;
+}
+.form .form__label--hidden {
+  display: none;
+}
+.form .form__input {
+  margin: 15px 0;
+  padding: 10px;
+  border: none;
+  border-bottom: 5px solid #4ACBB4;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 100px;
+  padding: 0;
+}
+.headline--secondary {
+  margin-top: 75px;
+}
+
+.blockquote {
+  font-size: 1.5em;
+  font-style: italic;
+  padding-left: 15px;
+  border-radius: 5px;
+  border-left: 5px solid #4ACBB4;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */

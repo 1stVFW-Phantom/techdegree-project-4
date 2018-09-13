@@ -1,0 +1,8 @@
+// mixins
+
+// Flexbox
+
+@mixin flexy ($flx: flex, $dir) {
+  display: $flx;
+  flex-direction: $dir;
+}

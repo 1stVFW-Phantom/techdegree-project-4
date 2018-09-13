@@ -1,5 +1,6 @@
 // Links, Images, Headlines, Nav Items
 
+// Nav items
 %nav__item {
   width: 100%;
   padding: 15px;
@@ -16,7 +17,23 @@
   }
 }
 
+// Links
+
 %link {
   text-decoration: none;
   color: $secondary-color;
+}
+
+// Headlines
+%headlines-general {
+  color: gray;
+  font-weight: 300;
+}
+
+%headlines-primary {
+  color: $primary-color;
+  padding-left: 25px;
+  font-weight: 600;
+  width: 75%;
+  line-height: normal;
 }
