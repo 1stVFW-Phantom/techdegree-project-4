@@ -15,7 +15,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@include mq ($break-sm) {
   @each $style, $color in $button-styling {
     .btn--#{$style} {
       margin: 10px 10px;

@@ -14,7 +14,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@include mq ($break-sm) {
   .grid__row {
     display: flex;
   }

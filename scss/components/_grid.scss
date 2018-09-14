@@ -18,8 +18,7 @@
   margin: 20px 0;
 }
 
-@media (min-width: 1400px) {
-
+@include mq ($break-sm) {
   @each $class, $color in $grid-styling {
     .#{$class}.theme__colors {
       flex: auto;
@@ -72,5 +71,4 @@
   .grid__col--12 {
     margin: auto;
   }
-
 }

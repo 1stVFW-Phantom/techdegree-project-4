@@ -26,3 +26,21 @@
     border-bottom: $size $type $color;
   }
 }
+
+// Media Queries
+
+@mixin mq ($break-point) {
+  @if $break-point == $break-sm {
+    @media (min-width: $break-point){
+      // small devices
+      @content;
+    }
+  }
+  @else if $break-point == $break-lg {
+    @media (min-width: $break-point) {
+
+      // large devices
+      @content;
+    }
+  }
+}

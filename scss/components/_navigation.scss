@@ -10,7 +10,7 @@ ul {
   }
 }
 
-@media (min-width: 1400px) {
+@include mq ($break-sm) {
   ul {
     text-align: inherit;
   }
@@ -19,3 +19,5 @@ ul {
     width: auto;
   }
 }
+
+// Test
