@@ -9,3 +9,10 @@ ul {
     @extend %nav__item;
   }
 }
+
+@media (min-width: 1400px) {
+  .nav .nav__item {
+    display: inline-block;
+    width: auto;
+  }
+}

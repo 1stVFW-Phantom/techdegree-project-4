@@ -1,10 +1,3 @@
-// .grid-row {
-//   @include flexy($dir: column);
-//   .theme_colors {
-//     margin: auto;
-//     text-align: center;
-//   }
-// }
 
 @each $class, $color in $grid-styling {
   .#{$class} {
@@ -21,6 +14,22 @@
   }
 }
 
-// .grid__row {
-//   @include flexy($dir: column);
-// }
+@media (min-width: 1400px) {
+  @each $class, $color in $grid-styling {
+    .#{$class} {
+      @include flexy($dir: row);
+    }
+  }
+  .grid__row:nth-of-type(1) {
+    @include flexy($dir: row);
+    justify-content: space-between;
+    width: 85%;
+    & > * {
+      display: inline-block;
+    }
+    .grid__col--9 .nav {
+      padding-top: 52px;
+      margin: 0;
+    }
+  }
+}
