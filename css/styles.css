@@ -184,6 +184,11 @@ ul .nav__item:hover {
   .grid__col--4 .form {
     width: 100%;
   }
+
+  .grid__col--6,
+.grid__col--12 {
+    margin: auto;
+  }
 }
 .btn--default {
   background-color: #6BE7FC;
@@ -245,6 +250,32 @@ ul .nav__item:hover {
   color: #FFF;
 }
 
+@media (min-width: 1400px) {
+  .btn--default {
+    margin: 10px 10px;
+    width: 150px;
+  }
+
+  .btn--success {
+    margin: 10px 10px;
+    width: 150px;
+  }
+
+  .btn--error {
+    margin: 10px 10px;
+    width: 150px;
+  }
+
+  .btn--warning {
+    margin: 10px 10px;
+    width: 150px;
+  }
+
+  .btn--info {
+    margin: 10px 10px;
+    width: 150px;
+  }
+}
 .form {
   display: flex;
   flex-direction: column;

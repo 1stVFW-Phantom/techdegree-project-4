@@ -48,4 +48,9 @@
       width: 100%;
     }
   }
+
+  .grid__col--6,
+  .grid__col--12 {
+    margin: auto;
+  }
 }

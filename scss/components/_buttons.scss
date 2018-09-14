@@ -14,3 +14,12 @@
     color: $white;
   }
 }
+
+@media (min-width: 1400px) {
+  @each $style, $color in $button-styling {
+    .btn--#{$style} {
+      margin: 10px 10px;
+      width: 150px;
+    }
+  }
+}
