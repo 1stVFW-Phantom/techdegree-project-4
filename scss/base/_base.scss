@@ -5,15 +5,12 @@
 .container {
   @include flexy($dir: column);
   width: 85%;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   font-family: $font-stack-primary;
   font-size: .85em;
   line-height: 1.5;
   .link {
       align-self: center;
-  }
-  .grid__row {
-    margin: 20px 0;
   }
 }
 
