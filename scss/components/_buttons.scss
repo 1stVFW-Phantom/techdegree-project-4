@@ -1,0 +1,16 @@
+
+// Uses the styling map created in _variables to generate all button
+// colors and styles
+@each $style, $color in $button-styling {
+  .btn--#{$style} {
+    background-color: $color;
+    box-shadow: none;
+    outline: none;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    color: $white;
+  }
+}

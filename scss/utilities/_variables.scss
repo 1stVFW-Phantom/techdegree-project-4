@@ -3,9 +3,36 @@
 // Colors
 $white: #FFF;
 $primary-color: #4ACBB4;
-$secondary-color: #42B5FF;
+$secondary-color: #6BE7FC;
+$success: #4DC484;
+$error: #FF8080;
+$warning: #F18A64;
+$info: #9681E9;
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600|Open+Sans:300,300i');
 $font-stack-primary: 'Montserrat', sans-serif;
 $font-stack-secondary: 'Open Sans', sans-serif;
+
+
+// Map of button styles and colors
+
+$button-styling: (
+  'default': $secondary-color,
+  'success': $success,
+    'error': $error,
+  'warning': $warning,
+     'info': $info,
+);
+
+// Map for styling grid content at the bototm of the page
+
+$grid-styling: (
+  'grid__col--12': lighten($primary-color, 20%),
+  'grid__col--6': darken($secondary-color, 40%),
+  'grid__col--4': lighten($secondary-color, 10%),
+  'grid__col--3': lighten($info, 15%),
+  'grid__col--5': lighten($success, 10%),
+  'grid__col--7': lighten($error, 8%),
+  'grid__col--8': lighten($warning, 8%),
+);

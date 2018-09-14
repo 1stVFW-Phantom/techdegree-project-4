@@ -1,0 +1,26 @@
+// .grid-row {
+//   @include flexy($dir: column);
+//   .theme_colors {
+//     margin: auto;
+//     text-align: center;
+//   }
+// }
+
+@each $class, $color in $grid-styling {
+  .#{$class} {
+    @include flexy($dir: column);
+  }
+}
+
+@each $class, $color in $grid-styling {
+  .#{$class}.theme__colors {
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px auto;
+    background-color: $color;
+  }
+}
+
+// .grid__row {
+//   @include flexy($dir: column);
+// }

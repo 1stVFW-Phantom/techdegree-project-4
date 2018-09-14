@@ -6,3 +6,23 @@
   display: $flx;
   flex-direction: $dir;
 }
+
+// Borders
+
+@mixin brdr ($side: all, $size, $type: solid, $color) {
+  @if $side == all {
+    border: $size $type $color;
+  }
+  @else if $side == left{
+    border-left: $size $type $color;
+  }
+  @else if $side == top {
+    border-top: $size $type $color;
+  }
+  @else if $side == right {
+    border-right: $size $type $color;
+  }
+  @else if $sice == bottom {
+    border-bottom: $size $type $color;
+  }
+}

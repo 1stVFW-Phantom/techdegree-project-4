@@ -2,7 +2,7 @@
   @include flexy($dir: column);
 
   .img--avatar {
-    margin: 15px auto;
+    @extend %img-av;
   }
 
   .form__label--hidden {
@@ -10,8 +10,9 @@
   }
 
   .form__input {
-    margin: 15px 0;
+    margin: 15px auto;
     padding: 10px;
+    width: 90%;
     border: none; // To remove the default border
     border-bottom: 5px solid $primary-color;
   }

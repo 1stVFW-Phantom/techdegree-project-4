@@ -4,7 +4,7 @@
 %nav__item {
   width: 100%;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 5px;
 
   > * { // Targets ony direct children
     text-decoration: none;
@@ -36,4 +36,10 @@
   font-weight: 600;
   width: 75%;
   line-height: normal;
+}
+
+// Images
+
+%img-av {
+  margin: 15px auto;
 }

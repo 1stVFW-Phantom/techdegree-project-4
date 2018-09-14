@@ -1,0 +1,14 @@
+
+.img--logo {
+  margin: 30px 0;
+}
+
+.img--frame {
+  @extend %img-av;
+  width: 95%;
+  padding: 10px;
+  @include brdr($size: 1px, $color: lightgray);
+}
+.img--avatar {
+  @extend %img-av;
+}
