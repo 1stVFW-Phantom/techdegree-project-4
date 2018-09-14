@@ -229,6 +229,16 @@ ul .nav__item:hover {
     width: 80%;
   }
 
+  /* Solves issue with the div breaking out of its container on window resize */
+  .grid__col--3.theme__colors {
+    min-width: 30px;
+  }
+
+  /* Solves issue with the div breaking out of its container on window resize */
+  .grid__col--12 {
+    flex-wrap: wrap;
+  }
+
   .grid__col--4 {
     width: 35%;
   }
