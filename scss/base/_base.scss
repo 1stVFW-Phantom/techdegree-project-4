@@ -16,3 +16,9 @@
     margin: 20px 0;
   }
 }
+
+@media (min-width: 1400px) {
+  .grid__row {
+    display: flex;
+  }
+}
