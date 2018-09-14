@@ -32,4 +32,20 @@
       margin: 0;
     }
   }
+
+  .grid__col--8 {
+    width: 75%;
+    margin: auto;
+    padding-right: 50px;
+    .card {
+      width: 80%;
+    }
+  }
+
+  .grid__col--4 {
+    width: 35%;
+    .form {
+      width: 100%;
+    }
+  }
 }

@@ -168,6 +168,22 @@ ul .nav__item:hover {
     padding-top: 52px;
     margin: 0;
   }
+
+  .grid__col--8 {
+    width: 75%;
+    margin: auto;
+    padding-right: 50px;
+  }
+  .grid__col--8 .card {
+    width: 80%;
+  }
+
+  .grid__col--4 {
+    width: 35%;
+  }
+  .grid__col--4 .form {
+    width: 100%;
+  }
 }
 .btn--default {
   background-color: #6BE7FC;
