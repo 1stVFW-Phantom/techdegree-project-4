@@ -17,9 +17,13 @@
 
 @include mq ($break-sm) {
   @each $style, $color in $button-styling {
-    .btn--#{$style} {
+    .btn--#{$style}.theme__colors {
       margin: 10px 10px;
       width: 150px;
     }
+  }
+
+  .btn--default[type="submit"] {
+    width: auto;
   }
 }

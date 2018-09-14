@@ -312,29 +312,33 @@ ul .nav__item:hover {
 }
 
 @media (min-width: 480px) {
-  .btn--default {
+  .btn--default.theme__colors {
     margin: 10px 10px;
     width: 150px;
   }
 
-  .btn--success {
+  .btn--success.theme__colors {
     margin: 10px 10px;
     width: 150px;
   }
 
-  .btn--error {
+  .btn--error.theme__colors {
     margin: 10px 10px;
     width: 150px;
   }
 
-  .btn--warning {
+  .btn--warning.theme__colors {
     margin: 10px 10px;
     width: 150px;
   }
 
-  .btn--info {
+  .btn--info.theme__colors {
     margin: 10px 10px;
     width: 150px;
+  }
+
+  .btn--default[type=submit] {
+    width: auto;
   }
 }
 .form {
@@ -354,6 +358,11 @@ ul .nav__item:hover {
   outline: none;
 }
 
+@media (min-width: 480px) {
+  .img--avatar {
+    width: 14vw;
+  }
+}
 .img--logo {
   margin: 30px 0;
 }
@@ -393,6 +402,11 @@ ul {
   margin-bottom: 30px;
 }
 
+@media (min-width: 480px) {
+  .blockquote {
+    min-width: 250px;
+  }
+}
 * {
   box-sizing: border-box;
 }

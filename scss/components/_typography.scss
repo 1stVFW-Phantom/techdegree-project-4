@@ -19,3 +19,9 @@
   @include brdr($side: left, $size: 5px, $color: $primary-color);
   margin-bottom: 30px;
 }
+
+@include mq ($break-sm) {
+  .blockquote {
+    min-width: 250px;
+  }
+}

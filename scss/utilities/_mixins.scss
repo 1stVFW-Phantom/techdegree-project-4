@@ -38,7 +38,6 @@
   }
   @else if $break-point == $break-lg {
     @media (min-width: $break-point) {
-
       // large devices
       @content;
     }
