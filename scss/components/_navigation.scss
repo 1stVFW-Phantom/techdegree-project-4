@@ -11,6 +11,9 @@ ul {
 }
 
 @media (min-width: 1400px) {
+  ul {
+    text-align: inherit;
+  }
   .nav .nav__item {
     display: inline-block;
     width: auto;

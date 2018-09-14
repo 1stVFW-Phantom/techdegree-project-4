@@ -340,6 +340,8 @@ ul .nav__item:hover {
   width: 90%;
   border: none;
   border-bottom: 5px solid #4ACBB4;
+  box-shadow: none;
+  outline: none;
 }
 
 .img--logo {
@@ -359,6 +361,10 @@ ul {
   padding: 0;
 }
 @media (min-width: 1400px) {
+  ul {
+    text-align: inherit;
+  }
+
   .nav .nav__item {
     display: inline-block;
     width: auto;

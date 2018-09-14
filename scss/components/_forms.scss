@@ -15,5 +15,7 @@
     width: 90%;
     border: none; // To remove the default border
     border-bottom: 5px solid $primary-color;
+    box-shadow: none;
+    outline: none;
   }
 }
