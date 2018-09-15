@@ -30,7 +30,7 @@ $button-styling: (
 
 $grid-styling: (
   'grid__col--12': lighten($primary-color, 20%),
-  'grid__col--6': darken($secondary-color, 40%),
+  'grid__col--6': darken($secondary-color, 25%),
   'grid__col--4': lighten($secondary-color, 10%),
   'grid__col--3': lighten($info, 15%),
   'grid__col--5': lighten($success, 10%),
