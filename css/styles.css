@@ -456,6 +456,7 @@ ul {
   font-family: "Montserrat", sans-serif;
   font-size: 0.85em;
   line-height: 1.5;
+  color: gray;
 }
 .container .link {
   align-self: center;
