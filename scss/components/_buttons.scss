@@ -11,6 +11,7 @@
     border-radius: 5px;
     border: none;
     text-transform: uppercase;
+    font-size: .85em;
     color: $white;
   }
 }
@@ -19,7 +20,7 @@
   @each $style, $color in $button-styling {
     .btn--#{$style}.theme__colors {
       margin: 10px 10px;
-      width: 150px;
+      width: 125px;
     }
   }
 

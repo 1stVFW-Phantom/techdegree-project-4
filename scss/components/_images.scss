@@ -12,3 +12,9 @@
 .img--avatar {
   @extend %img-av;
 }
+
+.grid__col--6 {
+  .img--avatar {
+    width: auto;
+  }
+}

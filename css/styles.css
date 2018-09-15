@@ -210,6 +210,8 @@ ul .nav__item:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    /* to prevent nav bar from wrapping */
     width: 85%;
   }
   .grid__row:nth-of-type(1) > * {
@@ -218,6 +220,8 @@ ul .nav__item:hover {
   .grid__row:nth-of-type(1) .nav {
     padding-top: 52px;
     margin: 0;
+    display: flex;
+    flex-direction: row;
   }
 
   .grid__col--8 {
@@ -234,9 +238,13 @@ ul .nav__item:hover {
     min-width: 30px;
   }
 
+  .grid__col--5.theme__colors {
+    flex: 0.8;
+  }
+
   /* Solves issue with the div breaking out of its container on window resize */
   .grid__col--12 {
-    flex-wrap: wrap;
+    min-width: 450px;
   }
 
   .grid__col--4 {
@@ -260,6 +268,7 @@ ul .nav__item:hover {
   border-radius: 5px;
   border: none;
   text-transform: uppercase;
+  font-size: 0.85em;
   color: #FFF;
 }
 
@@ -272,6 +281,7 @@ ul .nav__item:hover {
   border-radius: 5px;
   border: none;
   text-transform: uppercase;
+  font-size: 0.85em;
   color: #FFF;
 }
 
@@ -284,6 +294,7 @@ ul .nav__item:hover {
   border-radius: 5px;
   border: none;
   text-transform: uppercase;
+  font-size: 0.85em;
   color: #FFF;
 }
 
@@ -296,6 +307,7 @@ ul .nav__item:hover {
   border-radius: 5px;
   border: none;
   text-transform: uppercase;
+  font-size: 0.85em;
   color: #FFF;
 }
 
@@ -308,33 +320,34 @@ ul .nav__item:hover {
   border-radius: 5px;
   border: none;
   text-transform: uppercase;
+  font-size: 0.85em;
   color: #FFF;
 }
 
 @media (min-width: 480px) {
   .btn--default.theme__colors {
     margin: 10px 10px;
-    width: 150px;
+    width: 125px;
   }
 
   .btn--success.theme__colors {
     margin: 10px 10px;
-    width: 150px;
+    width: 125px;
   }
 
   .btn--error.theme__colors {
     margin: 10px 10px;
-    width: 150px;
+    width: 125px;
   }
 
   .btn--warning.theme__colors {
     margin: 10px 10px;
-    width: 150px;
+    width: 125px;
   }
 
   .btn--info.theme__colors {
     margin: 10px 10px;
-    width: 150px;
+    width: 125px;
   }
 
   .btn--default[type=submit] {
@@ -373,6 +386,10 @@ ul .nav__item:hover {
   border: 1px solid lightgray;
 }
 
+.grid__col--6 .img--avatar {
+  width: auto;
+}
+
 ul {
   list-style: none;
   text-align: center;
@@ -387,6 +404,7 @@ ul {
   .nav .nav__item {
     display: inline-block;
     width: auto;
+    flex-wrap: nowrap;
   }
 }
 .headline--secondary {

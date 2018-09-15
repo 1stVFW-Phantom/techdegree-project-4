@@ -17,5 +17,6 @@ ul {
   .nav .nav__item {
     display: inline-block;
     width: auto;
+    flex-wrap: nowrap;
   }
 }

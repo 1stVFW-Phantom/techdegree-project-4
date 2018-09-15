@@ -41,6 +41,7 @@
   .grid__row:nth-of-type(1) {
     @include flexy($dir: row);
     justify-content: space-between;
+    flex-wrap: wrap; /* to prevent nav bar from wrapping */
     width: 85%;
     & > * {
       display: inline-block;
@@ -48,6 +49,7 @@
     .nav {
       padding-top: 52px;
       margin: 0;
+      @include flexy($dir: row);
     }
   }
 
@@ -64,9 +66,13 @@
     min-width: 30px;
   }
 
+  .grid__col--5.theme__colors {
+    flex: .80;
+  }
+
   /* Solves issue with the div breaking out of its container on window resize */
   .grid__col--12 {
-    flex-wrap: wrap;
+    min-width: 450px;
   }
 
   .grid__col--4 {
